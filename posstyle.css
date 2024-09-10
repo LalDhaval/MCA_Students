@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    display: inline;
+    margin: 15px;
+}
+ul,li,a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+.navi{
+    display: flex;
+    background-color: aqua;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+.navi > img{
+    height: 50px;
+}
+.top > a > img{
+    height: 50px;
+}
+.navi > a:hover{
+    background-color: blueviolet;
+}
+@media screen and (max-width: 320px) {
+    ul,li,a{
+        text-decoration: underline;
+    }
+    a:hover{
+        background-color: green;
+    }
+}
+.content{
+    text-align: justify;
+    margin: 15px;
+}
+.top{
+    position: sticky;
+    bottom: 20px;
+    right: 3.0px;
+}
+html{
+    scroll-behavior: smooth;
+}
